@@ -5,319 +5,434 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/assets/css/app.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>FlexBox</title>
   </head>
   <body>
-    <h1>Vamos aprender FlexBox</h1>
+    <div class="header">
+      <div class="title-and-icon">
+        <h1 style="color: white">FlexBox e suas propriedades</h1>
+        <img
+          src="/assets/images/layout.png"
+          alt="Icone de layout colorido"
+          style="height: 64px; width: 64px"
+        />
+      </div>
+
+      <nav>
+        <a href="#flex">display</a>
+        <a href="#flex-column">flex-direction</a>
+        <a href="#flex-wrap">flex-wrap</a>
+        <a href="#justify-center">justify-content</a>
+        <a href="#flex-flow">flex-flow</a>
+        <a href="#align-items">align-items</a>
+        <a href="#align-content">align-content</a>
+      </nav>
+    </div>
     <div class="container">
-      <h4>display: flex;</h4>
-
-      <div class="flex">
+      <code class="sintax" id="flex">display: flex;</code>
+      <div class="display-flex">
         <div class="container-img">
-          <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" class="img-bigger"/>
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+            class="img-bigger"
+          />
+        </div>
       </div>
-    </div>   
 
-    <h4>flex-wrap: wrap;</h4>
-    <div class="flex-wrap" >
-            <div class="container-img">
-                <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-                
-            </div>
-            <div class="container-img">
-                <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-                
-            </div><div class="container-img">
-                <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-                
-            </div>
-            <div class="container-img">
-                <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-                
-            </div>
-            
-    </div>  
-
-    <h4 id="nowrap">flex-wrap: nowrap;</h4>
-    <div class="flex-nowrap">
-               
-      <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div><div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-    </div>
-
-    <div class="justify-content-center">              
-      <h4>justify-content: center;</h4>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-       
-    </div>
-    
-    <div class="justify-content-between">
-        <code>display: flex;</code>
-        <code>justify-content: space-between;</code>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-    </div>
-
-    <div class="justify-content-around">
-        <code>display: flex;</code>
-        <code>justify-content: space-around;</code>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-    </div>
-    
-    <div class="justify-content-start">
-        <code>display: flex;</code>
-        <code>justify-content: flex-start;</code>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-    </div>
-
-    <div class="justify-content-end">
-        <code>display: flex;</code>
-        <code>justify-content: flex-end;</code>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-        <div class="container-img">
-            <img src="/assets/images/logo-dpo.png" alt="logo da DPONET" />
-            
-        </div>
-    </div>
-
+      <code class="sintax" id="flex-column">flex-direction: column; </code>
       <div class="column">
-        <code>flex-direction: column; </code>
-        
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >1</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >2</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >3</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
       </div>
 
+      <code class="sintax">flex-direction: row; </code>
       <div class="row">
-        <code>flex-direction: row; </code>
-        
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >1</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >2</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >3</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
       </div>
-      
+
+      <code class="sintax" id="flex-wrap">flex-wrap: wrap;</code>
+      <div class="flex-wrap">
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+      </div>
+
+      <code class="sintax" id="flex-nowrap">flex-wrap: nowrap;</code>
+      <div class="flex-nowrap">
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+      </div>
+
+      <code class="sintax" id="justify-center">justify-content: center;</code>
+      <div class="justify-content-center">
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+      </div>
+
+      <code class="sintax" id="justify-between">
+        justify-content: space-between;
+      </code>
+      <div class="justify-content-between">
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+      </div>
+
+      <code class="sintax">justify-content: space-around;</code>
+      <div class="justify-content-around">
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+      </div>
+
+      <code class="sintax">justify-content: flex-start;</code>
+      <div class="justify-content-start">
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+      </div>
+
+      <code class="sintax">justify-content: flex-end;</code>
+      <div class="justify-content-end">
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da DPONET"
+          />
+        </div>
+      </div>
+
+      <code class="sintax" id="flex-flow">flex-flow: column wrap </code>
       <div class="flex-flow1">
-        <code>flex-flow: column wrap </code>
-        
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >1</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >2</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >3</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-      </div> 
+      </div>
 
+      <code class="sintax">flex-flow: row nowrap </code>
       <div class="flex-flow2">
-        <code>flex-flow: row nowrap </code>
-        
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /> 
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >2</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >3</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-      </div> 
+      </div>
 
+      <code class="sintax" id="align-items">align-items: stretch; </code>
       <div class="align-items1">
-        <code>align-items: stretch; </code>
-        
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >1</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >2</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" /><span
-            >3</span
-          >
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-      </div> 
+      </div>
 
+      <code class="sintax">align-items: flex-start; </code>
       <div class="align-items2">
-        <code>align-items: flex-start; </code>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-      </div> 
-      
+      </div>
+
+      <code class="sintax">align-items: flex-end;</code>
       <div class="align-items3">
-        <code>align-items: flex-end;</code>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-      </div> 
+      </div>
 
+      <code class="sintax">align-items: center;</code>
       <div class="align-items4">
-        <code>align-items: center;</code>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          <span>3</span>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
       </div>
 
+      <code class="sintax">align-items: baseline;</code>
       <div class="align-items5">
-        <code>align-items: baseline;</code>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          <span>3</span>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
       </div>
 
+      <code class="sintax" id="align-content">align-content: normal ;</code>
       <div class="align-content1">
-        <code>align-content: normal ;</code>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div>
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-        <div >
-          <img src="/assets/images/logo-dpo.png" alt="logo da dponet" />
-          <span>3</span>
+        <div class="container-img">
+          <img
+            src="/assets/images/Logo-Clara-DPOnet.png"
+            alt="logo da dponet"
+          />
         </div>
-      </div>
       </div>
     </div>
-  
   </body>
 </html>
