@@ -143,6 +143,26 @@ h1 {
 }
 
 .align-content1 {
-  align-items: none;
+  height: 65vh  !important;
   align-content: normal;
 }
+
+.align-content2 {
+  height: 65vh  !important;
+  align-content: flex-start;
+}
+
+.align-content3 {
+  height: 65vh  !important;
+  align-content: flex-end;
+}
+
+.align-content4 {
+  height: 65vh  !important;
+  align-content: center;
+}
+
+
+
+
+
