@@ -54,12 +54,16 @@
     border: 3px dashed salmon;
 }
 
+.flex-basis {
+  width: 100vw;
+}
 
 .flex-basis1 {
-  flex-basis: 1000px;
+  flex-basis: 1000px !important; /* não está funcionando pelo css só inline*/
 }
 
 .flex-basis2 {
-  flex-basis: 1000px;
+  flex-basis: 100px;
 }
+
 

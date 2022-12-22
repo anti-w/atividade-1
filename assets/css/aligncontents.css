@@ -86,7 +86,7 @@
 
   .align-content7 {
     height: 65vh  !important;
-    align-content: spacewidth-evenly;
+    align-content: space-evenly;
   }
 
   .align-content8 {
