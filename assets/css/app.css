@@ -18,15 +18,15 @@ h1 {
   font-size: 20px;
 }
 
-.img-bigger {
-  width: 100%;
-  height: 100%;
-}
-
 .sintax {
   font-size: 26px;
   font-weight: 900;
   margin-bottom: -25px;
+}
+
+.img-bigger {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -119,6 +119,7 @@ h1 {
 }
 
 .align-items1 {
+  align-items: stretch;
   height: 65vh !important;
 }
 
@@ -140,26 +141,6 @@ h1 {
 .align-items5 {
   align-items: baseline;
   height: 65vh !important;
-}
-
-.align-content1 {
-  height: 65vh  !important;
-  align-content: normal;
-}
-
-.align-content2 {
-  height: 65vh  !important;
-  align-content: flex-start;
-}
-
-.align-content3 {
-  height: 65vh  !important;
-  align-content: flex-end;
-}
-
-.align-content4 {
-  height: 65vh  !important;
-  align-content: center;
 }
 
 
