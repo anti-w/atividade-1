@@ -29,6 +29,36 @@ h1 {
   font-size: 20px;
 }
 
+h5 {
+  font-size: 16px;
+  color: white;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  position: relative;
+  color: white;
+  font-weight: 700;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  padding: 0;
+  left: 0;
+  width: 0;
+  background-color: salmon;
+  transition: all 500ms ease-in-out;
+}
+
+a:hover::after {
+  padding: 1px;
+  width: 100%;
+}
 .sintax {
   font-size: 26px;
   font-weight: 900;
@@ -44,13 +74,24 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 15px;
 }
 
 .title-and-icon {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  width: 100%;
+}
+.next-with-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  width: 70%;
 }
 
 .container {
@@ -153,8 +194,3 @@ h1 {
   align-items: baseline;
   height: 65vh !important;
 }
-
-
-
-
-
