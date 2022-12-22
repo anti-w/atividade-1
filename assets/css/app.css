@@ -10,8 +10,8 @@ body {
 }
 
 img {
-  width: 420px;
-  height: 100px;
+  width: 315px;
+  height: 75px;
 }
 
 h1 {
@@ -134,6 +134,11 @@ h1 {
 
 .align-items4 {
   align-items: center;
+  height: 65vh !important;
+}
+
+.align-items5 {
+  align-items: baseline;
   height: 65vh !important;
 }
 
